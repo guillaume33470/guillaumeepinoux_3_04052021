@@ -19,7 +19,7 @@ header {
     padding: 25px 25px;
 }
 
-#logo {
+.logo {
     width: 165px;
     height: 28px;
 }
@@ -136,13 +136,27 @@ article {
 }
 
 .art {
-    margin-top: 5%;
-    border: 1px #cec6c6;
+
     background-color:white;
+}
+.nouveau{
+    position:relative;
+    text-align:right;
+    top:40px;
+    right:10px;
+}
+span{
+    background-color:#00FA9A;
+    padding:10px;
+    color:#2E8B57;
+    font-size:1rem;
+    font-weight:bold;
 }
 
 .img1 {
+
     width:100%;
+    height:170px;
     object-fit: cover;
 }
 
@@ -158,6 +172,10 @@ a:link {
 footer{
     background-color:#383e42;
     padding:25px;   
+}
+.logf{
+    width:140px;
+    filter: invert(100%);
 }
 p{
     color:white;
