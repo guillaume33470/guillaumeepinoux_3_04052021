@@ -1,0 +1,31 @@
+body{
+    margin:auto;
+}
+/******header*******/
+header {
+    width:100%;
+}
+
+.entete{
+    width:100%;
+}
+#logo{
+    width:100%;
+}
+.img1{
+    width:320px;
+    object-fit:cover;
+}
+/*****menu********/
+/*****footer******/
+footer{
+    background-color:#383e42;
+    padding:25px;   
+}
+.logf{
+    width:140px;
+    filter: invert(100%);
+}
+p{
+    color:white;
+}
