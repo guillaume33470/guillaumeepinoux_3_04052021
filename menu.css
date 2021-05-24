@@ -18,15 +18,17 @@ body{
 /******police*******/
 h1{
     font-family:"shrikhand";
-    font-size:1.5rem;
+    font-size:1.9rem;
     margin:0px 20px;
-    padding-top:60px;
+    font-weight:400;
 }
 h2{
     font-family:"roboto";
     font-size:1.3rem;
     font-weight:normal;
-    text-decoration:underline green; 
+    text-decoration:underline green;
+    margin-left:30px;
+    padding-top:20px;
 }
 h3{
     font-family:"robotoB";
@@ -48,41 +50,46 @@ strong{
 }
 /******header*******/
 header {
-    width:100%;
+    text-align: center;
 }
 
 .entete{
     width:100%;
     display: flex;
     align-items: center;
-    height: 60px;
+    height: 40px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.fa-arrow-left{
+    float:left;
+    font-size:1.5rem;
+    color:black;
+    margin-left:20px;
 }
 #logo{
     width:50%;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    position: relative;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);  
 }
 .img1{
     width:100%;
-    height:80%;
     object-fit:cover;
 }
 .fa-heart{
-    margin-left:20%;
+    margin-left:25px;
 }
 
 /*****menu********/
 section{
     background-color:#f6f6f6;
-    border-radius: 70px 70px 0px 0px;
-
+    border-radius: 50px 50px 0px 0px;
+    padding-top:35px;
 }
 article{
     border-radius: 10px 10px 10px 10px;
-    position: relative;
     padding:2px 2px;
     margin:20px;
     background-color: white;
@@ -92,8 +99,7 @@ article{
     text-align: center;
     padding:40px 0px 50px;
 }
-a.button:link 
-{ 
+a.button:link{ 
  text-decoration:none; 
 } 
 .bouton a {
@@ -105,25 +111,4 @@ a.button:link
 
 .bouton :hover {
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-}
-
-/*****footer******/
-footer{
-    background-color:#383e42;
-    padding:25px;  
-}
-.logf{
-    width:140px;
-    filter: invert(100%);
-}
-p{
-    color:white;
-}
-.fa-utensils{
-    font-size:0.9rem;
-    padding-right:10px;
-}
-.fa-hands-helping{
-  font-size:0.9rem;
-  padding-right:5px;  
 }
