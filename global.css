@@ -14,15 +14,61 @@
 
 /******body******/
 
-body {
-    margin: auto;
+body{
+	height:100vh;
+	align-items:center;
+	justify-content:center;
+	position:relative;
+	background-color:#02143c;
 }
 /*****load spinner*****/
+.container{
+	display:flex;
+	position:relative;
+	height:100%;
+	width:100%;
+	align-items:center;
+	justify-content:center;
+}
+.circle{
+	position:absolute;
+	border-radius:50%;	
+	animation:spin 3s linear infinite;
+	display:flex;
+}
+
+.circle-red{
+	border:20px solid rgba(252,33,33,.2);
+	border-right:20px solid rgb(252,33,33);
+	animation-delay:.5s;
+	width:150px;
+	height:150px;
+}
+
+.circle-green{
+	border:20px solid rgba(198,200,99,.2);
+	border-right:20px solid rgb(198,200,99);
+	animation-delay:1s;
+	width:100px;
+	height:100px;
+}
+
+.circle-blue{
+	border:20px solid rgba(18,198,255,.2);
+	border-right:20px solid rgb(18,198,255);
+	width:200px;
+	height:200px;
+}
+
+@keyframes spin{
+	100%{
+		transform:rotate3D(1,.5,.75,720deg)  rotateZ(720deg);
+	}
+}
 
 
-/****header****/
-
-header {
+/****header******/
+.entete {
     text-align: center;
 }
 
@@ -81,12 +127,12 @@ h2{
     color:#4d4d4d;
 }
 .h2fonctionne {
+    font-family:"roboto"
     font-size: 1.4rem;
     font-weight: bold;
     text-align:left;
     margin-left:25px;
     color:black;
-    font-family:"roboto";
 }
 .h2restau{
     margin-left:20px;
@@ -254,7 +300,7 @@ a:link {
 .fa-heart {
     font-size:1.3rem;
     color: white;
-    margin-top:-5%;
+    margin-top:-2%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }

@@ -1,7 +1,51 @@
+@font-face {
+    font-family: "shrikhand";
+    src: url('fonts/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "robotoB";
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
 body{
     margin:auto;
 }
-
+/******police*******/
+h1{
+    font-family:"shrikhand";
+    font-size:1.5rem;
+    margin:0px 20px;
+    padding-top:60px;
+}
+h2{
+    font-family:"roboto";
+    font-size:1.3rem;
+    font-weight:normal;
+    text-decoration:underline green; 
+}
+h3{
+    font-family:"robotoB";
+    font-size:1rem;
+    font-weight:normal;
+    margin-bottom:2px;
+    margin-left:5px;
+}
+h4{
+    font-family:"roboto";
+    font-size:1rem;
+    font-weight:normal;
+    margin-top:0px;
+    margin-left:5px;
+}
+strong{
+    float:right;
+    margin-right:4%;
+}
 /******header*******/
 header {
     width:100%;
@@ -23,6 +67,7 @@ header {
 }
 .img1{
     width:100%;
+    height:80%;
     object-fit:cover;
 }
 .fa-heart{
@@ -32,13 +77,20 @@ header {
 /*****menu********/
 section{
     background-color:#f6f6f6;
-    position:relative;relative
+    border-radius: 70px 70px 0px 0px;
 
+}
+article{
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    padding:2px 2px;
+    margin:20px;
+    background-color: white;
 }
 /******bouton commander*****/
 .bouton {
     text-align: center;
-    position:abolute;
+    padding:40px 0px 50px;
 }
 a.button:link 
 { 
@@ -58,8 +110,7 @@ a.button:link
 /*****footer******/
 footer{
     background-color:#383e42;
-    padding:25px;
-    margin-top:15px;   
+    padding:25px;  
 }
 .logf{
     width:140px;
@@ -67,4 +118,12 @@ footer{
 }
 p{
     color:white;
+}
+.fa-utensils{
+    font-size:0.9rem;
+    padding-right:10px;
+}
+.fa-hands-helping{
+  font-size:0.9rem;
+  padding-right:5px;  
 }
