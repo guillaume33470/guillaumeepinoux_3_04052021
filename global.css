@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "shrikhand";
+    src: url('fonts/Shrikhand-Regular.ttf');
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url('fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: "robotoB";
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
 /******body******/
 
 body {
@@ -12,6 +26,7 @@ header {
     text-align: center;
 }
 
+
 /****background du gris clair****/
 
 #fond {
@@ -20,7 +35,8 @@ header {
 }
 
 .logo {
-    margin:15px;
+    font-family:"shrikhand";
+    margin: 15px;
     width: 165px;
     height: 28px;
 }
@@ -35,7 +51,10 @@ header {
     height: 50px;
     font-size: 1rem;
 }
-
+.localisation{
+    color:#4b4b4b;
+    font-family:"roboto";
+}
 
 /****h1 ,h2 gestion alignement****/
 
@@ -44,62 +63,82 @@ header {
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-family:"robotoB";
+    font-size: 1.8rem;
+    font-weight:800;
 }
-
-h2 {
+h2{
+    font-family:"rotobB";
+    font-size:1.5rem;
+    padding-top:20px;
+    margin-bottom:0px;
+}
+.decouverte{
+    font-family:"roboto";
     font-size: 1rem;
-    font-weight: normal;
+    font-weight:normal;
+    padding-top:0px;
+    color:#4d4d4d;
 }
-h3{
-    color:black;
-}
-h4{
-    color:black;
-}
-
-
-/***h2 fonctionnement*****/
-
-.h2f {
+.h2fonctionne {
     font-size: 1.4rem;
     font-weight: bold;
-    text-align: center;
+    text-align:left;
+    margin-left:25px;
+    color:black;
+    font-family:"roboto";
+}
+.h2restau{
+    margin-left:20px;
 }
 
+h3 {
+    font-family:"roboto";
+    color: black;
+    margin-bottom:5px;
+    padding-left:10px;
+}
+
+h4 {
+    font-family:"roboto";
+    font-weight:normal;
+    color: black;
+    margin-top:5px;
+    margin-left:10px
+}
 
 /*****bouton explorez****/
 
 .bouton {
     text-align: center;
-    margin:15px;
+    margin: 40px;
 }
 
 .bouton a {
     border-radius: 25px 25px 25px 25px;
-    padding: 10px 30px;
-    background-color:#9356DC;
+    padding: 15px 20px;
+    background-color: #9356DC;
     color: white;
+    font-family:"roboto";
+
 }
 
 .bouton :hover {
-    background: linear-gradient(to bottom right,#9356DC, #FF79DA);
+    background: linear-gradient(180deg,#FF79DA,#9356DC);
 }
 
 
 /******section fonctionnement********/
 
-section {
+.fonctionnement {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom:50px;
 }
 
 article {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin:15px; 
+    padding:20px;
 }
 
 .numero,
@@ -107,59 +146,99 @@ article {
     border: #9356DC 2px solid;
 }
 
-.numero {
-    margin-top: 15px;
-    width: 20px;
-    height: 5%;
-    border-radius: 20px;
-    text-align: center;
-    color: white;
-    background-color: #9356DC;
-}
-
 .para {
-    padding: 15px 30px;
-    border-radius: 20px;
+    position:relative;
+    padding:5px 0px;
+    border-radius: 20px 20px;
     border-color: #F0F0F0;
     background-color: #F0F0F0;
     box-shadow: 0px 5px 0px #F6F6F6;
+}
+.para:hover{
+    background-color:#f5edff;
+}
+.numero {
+    margin-left:-12px;
+    float:left;
+    border-radius: 20px;
+    width:24px;
+    height:22px;
+    text-align: center;
+    padding-top:3px;
+    color: white;
+    background-color: #9356DC;
+}
+.explication{
+    font-family:"robotoB";
+    padding-top:5px;
+    padding-left:30px;
+    color:black;
+}
+.fa-mobile-alt{
+    color:black;
+    padding-right:10px;
+}
+.fa-list{
+    color:black;
+    padding-right:10px;
+}
+.fa-store{
+    color:black;
+    padding-right:10px;
+}
+
+.fa-mobile-alt:hover{
+    color:#9356dc;
+}
+
+.fa-list:hover{
+    color:#9356dc;
+}
+.fa-store:hover{
+    color:#9356dc;
 }
 
 
 /*******section index********/
 
-.men {
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-basis: auto;
     background-color: #F0F0F0;
-    width:100%;
+    width: 100%;
 }
 
 .art {
-    border-radius:10px 10px 0px 0px;
-    position:relative;
-    background-color:white;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    margin:15px;
+    padding:0px;
+    background-color: white;
 }
-.nouveau{
-    position:absolute;
-    text-align:right;
-    top:40px;
-    right:10px;
+
+.nouveau {
+    position: absolute;
+    text-align: right;
+    top: 10%;
+    right:5%;
 }
-span{
-    background-color:#99e2d0;
-    padding:10px;
-    color:#008766;
-    font-size:1rem;
-    font-weight:bold;
+
+span {
+    font-family:"roboto";
+    background-color: #99e2d0;
+    padding: 5px 5px;
+    border-radius:5px 5px;
+    color: #008766;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
 
 .img1 {
-    border-radius:10px 10px 0px 0px;
-    width:100%;
-    height:170px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 170px;
     object-fit: cover;
 }
 
@@ -169,34 +248,54 @@ a:link {
 
 .far {
     float: right;
-    margin-right:25px;
+    margin-right: 25px;
 }
 
-.fa-heart{
-    color:white;
+.fa-heart {
+    font-size:1.3rem;
+    color: white;
+    margin-top:-5%;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-color: black;
 }
+
 .fa-heart::before {
     content: "\f004";
     font-weight: bold;
     transition: color 3s ease-out;
 }
-.fa-heart:hover::before{
+
+.fa-heart:hover::before {
     color: #9356DC;
     cursor: pointer;
 }
 
 
 /*****footer******/
-footer{
-    background-color:#383e42;
-    padding:25px;   
+
+footer {
+    background-color: #383e42;
+    padding: 25px;
 }
-.logf{
-    width:140px;
+
+.logf {
+    font-family:"shrikhand";
+    width: 140px;
     filter: invert(100%);
 }
-p{
-    color:white;
+
+p {
+    font-family:"roboto";
+    font-size:1.1rem;
+    color: white;
 }
+.fa-utensils{
+    font-size:0.9rem;
+    padding-right:10px;
+}
+.fa-hands-helping{
+  font-size:0.9rem;
+  padding-right:5px;  
+}
+
+
