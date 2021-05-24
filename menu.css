@@ -26,10 +26,12 @@ h2{
     font-family:"roboto";
     font-size:1.3rem;
     font-weight:normal;
-    text-decoration:underline green;
     margin-left:30px;
     padding-top:20px;
+    border-bottom:3px #99e2d0 solid;
+    width:8%;
 }
+
 h3{
     font-family:"robotoB";
     font-size:1rem;
@@ -56,24 +58,18 @@ header {
 .entete{
     width:100%;
     display: flex;
-    align-items: center;
+    flex-direction:row;
+    justify-content:space-evenly;
     height: 40px;
-    margin-top:20px;
     margin-bottom:20px;
+    padding-top:20px;
 }
 .fa-arrow-left{
-    float:left;
     font-size:1.5rem;
     color:black;
-    margin-left:20px;
+    margin-top:10px;
 }
-#logo{
-    width:50%;
-    position: relative;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);  
-}
+
 .img1{
     width:100%;
     object-fit:cover;
