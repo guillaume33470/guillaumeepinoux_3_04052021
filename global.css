@@ -7,72 +7,19 @@
     font-family: "roboto";
     src: url('fonts/Roboto-Regular.ttf');
 }
+
 @font-face {
     font-family: "robotoB";
     src: url('fonts/Roboto-Bold.ttf');
 }
-
 /******body******/
-
-body{
-	height:100vh;
-	align-items:center;
-	justify-content:center;
-	position:relative;
-	background-color:#02143c;
+body {
+    margin: auto;
 }
-/*****load spinner*****/
-.container{
-	display:flex;
-	position:relative;
-	height:100%;
-	width:100%;
-	align-items:center;
-	justify-content:center;
-}
-.circle{
-	position:absolute;
-	border-radius:50%;	
-	animation:spin 3s linear infinite;
-	display:flex;
-}
-
-.circle-red{
-	border:20px solid rgba(252,33,33,.2);
-	border-right:20px solid rgb(252,33,33);
-	animation-delay:.5s;
-	width:150px;
-	height:150px;
-}
-
-.circle-green{
-	border:20px solid rgba(198,200,99,.2);
-	border-right:20px solid rgb(198,200,99);
-	animation-delay:1s;
-	width:100px;
-	height:100px;
-}
-
-.circle-blue{
-	border:20px solid rgba(18,198,255,.2);
-	border-right:20px solid rgb(18,198,255);
-	width:200px;
-	height:200px;
-}
-
-@keyframes spin{
-	100%{
-		transform:rotate3D(1,.5,.75,720deg)  rotateZ(720deg);
-	}
-}
-
-
 /****header******/
 .entete {
     text-align: center;
 }
-
-
 /****background du gris clair****/
 
 #fond {
@@ -81,7 +28,7 @@ body{
 }
 
 .logo {
-    font-family:"shrikhand";
+    font-family: "shrikhand";
     margin: 15px;
     width: 165px;
     height: 28px;
@@ -97,10 +44,12 @@ body{
     height: 50px;
     font-size: 1rem;
 }
-.localisation{
-    color:#4b4b4b;
-    font-family:"roboto";
+
+.localisation {
+    color: #4b4b4b;
+    font-family: "roboto";
 }
+
 
 /****h1 ,h2 gestion alignement****/
 
@@ -109,49 +58,53 @@ body{
 }
 
 h1 {
-    font-family:"robotoB";
+    font-family: "robotoB";
     font-size: 1.8rem;
-    font-weight:800;
+    font-weight: 800;
 }
-h2{
-    font-family:"rotobB";
-    font-size:1.5rem;
-    padding-top:20px;
-    margin-bottom:0px;
+
+h2 {
+    font-family: "rotobB";
+    font-size: 1.5rem;
+    padding-top: 20px;
+    margin-bottom: 0px;
 }
-.decouverte{
-    font-family:"roboto";
+
+.decouverte {
+    font-family: "roboto";
     font-size: 1rem;
-    font-weight:normal;
-    padding-top:0px;
-    color:#4d4d4d;
+    font-weight: normal;
+    padding-top: 0px;
+    color: #4d4d4d;
 }
+
 .h2fonctionne {
-    font-family:"roboto"
-    font-size: 1.4rem;
+    font-family: "roboto" font-size: 1.4rem;
     font-weight: bold;
-    text-align:left;
-    margin-left:25px;
-    color:black;
+    text-align: left;
+    margin-left: 25px;
+    color: black;
 }
-.h2restau{
-    margin-left:20px;
+
+.h2restau {
+    margin-left: 20px;
 }
 
 h3 {
-    font-family:"roboto";
+    font-family: "roboto";
     color: black;
-    margin-bottom:5px;
-    padding-left:10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
 }
 
 h4 {
-    font-family:"roboto";
-    font-weight:normal;
+    font-family: "roboto";
+    font-weight: normal;
     color: black;
-    margin-top:5px;
-    margin-left:10px
+    margin-top: 5px;
+    margin-left: 10px
 }
+
 
 /*****bouton explorez****/
 
@@ -165,12 +118,11 @@ h4 {
     padding: 15px 20px;
     background-color: #9356DC;
     color: white;
-    font-family:"roboto";
-
+    font-family: "roboto";
 }
 
 .bouton :hover {
-    background: linear-gradient(180deg,#FF79DA,#9356DC);
+    background: linear-gradient(180deg, #FF79DA, #9356DC);
 }
 
 
@@ -180,11 +132,11 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
 
 article {
-    padding:20px;
+    padding: 20px;
 }
 
 .numero,
@@ -193,55 +145,62 @@ article {
 }
 
 .para {
-    position:relative;
-    padding:5px 0px;
+    position: relative;
+    padding: 5px 0px;
     border-radius: 20px 20px;
     border-color: #F0F0F0;
     background-color: #F0F0F0;
     box-shadow: 0px 5px 0px #F6F6F6;
 }
-.para:hover{
-    background-color:#f5edff;
+
+.para:hover {
+    background-color: #f5edff;
 }
+
 .numero {
-    margin-left:-12px;
-    float:left;
+    margin-left: -12px;
+    float: left;
     border-radius: 20px;
-    width:24px;
-    height:22px;
+    width: 24px;
+    height: 22px;
     text-align: center;
-    padding-top:3px;
+    padding-top: 3px;
     color: white;
     background-color: #9356DC;
 }
-.explication{
-    font-family:"robotoB";
-    padding-top:5px;
-    padding-left:30px;
-    color:black;
-}
-.fa-mobile-alt{
-    color:black;
-    padding-right:10px;
-}
-.fa-list{
-    color:black;
-    padding-right:10px;
-}
-.fa-store{
-    color:black;
-    padding-right:10px;
+
+.explication {
+    font-family: "robotoB";
+    padding-top: 5px;
+    padding-left: 30px;
+    color: black;
 }
 
-.fa-mobile-alt:hover{
-    color:#9356dc;
+.fa-mobile-alt {
+    color: black;
+    padding-right: 10px;
 }
 
-.fa-list:hover{
-    color:#9356dc;
+.fa-list {
+    color: black;
+    padding-right: 10px;
 }
-.fa-store:hover{
-    color:#9356dc;
+
+.fa-store {
+    color: black;
+    padding-right: 10px;
+}
+
+.fa-mobile-alt:hover {
+    color: #9356dc;
+}
+
+.fa-list:hover {
+    color: #9356dc;
+}
+
+.fa-store:hover {
+    color: #9356dc;
 }
 
 
@@ -259,8 +218,8 @@ article {
 .art {
     border-radius: 10px 10px 10px 10px;
     position: relative;
-    margin:15px;
-    padding:0px;
+    margin: 15px;
+    padding: 0px;
     background-color: white;
 }
 
@@ -268,14 +227,14 @@ article {
     position: absolute;
     text-align: right;
     top: 10%;
-    right:5%;
+    right: 5%;
 }
 
 span {
-    font-family:"roboto";
+    font-family: "roboto";
     background-color: #99e2d0;
     padding: 5px 5px;
-    border-radius:5px 5px;
+    border-radius: 5px 5px;
     color: #008766;
     font-size: 0.8rem;
     font-weight: bold;
@@ -298,9 +257,9 @@ a:link {
 }
 
 .fa-heart {
-    font-size:1.3rem;
+    font-size: 1.3rem;
     color: white;
-    margin-top:-2%;
+    margin-top: -2%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -315,8 +274,3 @@ a:link {
     color: #9356DC;
     cursor: pointer;
 }
-
-
-
-
-

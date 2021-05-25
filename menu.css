@@ -72,6 +72,7 @@ header {
 
 .img1{
     width:100%;
+    height:250px;
     object-fit:cover;
 }
 .fa-heart{
@@ -80,9 +81,11 @@ header {
 
 /*****menu********/
 section{
+    position:relative;
     background-color:#f6f6f6;
     border-radius: 50px 50px 0px 0px;
     padding-top:35px;
+    margin-top: -40px;
 }
 article{
     border-radius: 10px 10px 10px 10px;
