@@ -79,7 +79,8 @@ h2 {
 }
 
 .h2fonctionne {
-    font-family: "roboto" font-size: 1.4rem;
+    font-family: "roboto";
+    font-size: 1.4rem;
     font-weight: bold;
     text-align: left;
     margin-left: 25px;
@@ -116,13 +117,14 @@ h4 {
 .bouton a {
     border-radius: 25px 25px 25px 25px;
     padding: 15px 20px;
-    background-color: #9356DC;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
     font-family: "roboto";
 }
 
 .bouton :hover {
-    background: linear-gradient(180deg, #FF79DA, #9356DC);
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
+    filter: brightness(110%);
 }
 
 

@@ -104,10 +104,11 @@ a.button:link{
 .bouton a {
     border-radius: 25px 25px 25px 25px;
     padding: 10px 30px;
-    background-color: #FF79DA;
+    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
 }
 
-.bouton :hover {
+.bouton a:hover {
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-}
+    filter: brightness(110%);
+  }
