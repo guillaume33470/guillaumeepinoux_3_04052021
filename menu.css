@@ -41,14 +41,13 @@ h3{
 }
 h4{
     font-family:"roboto";
-    font-size:1rem;
+    font-size:0.6 rem;
     font-weight:normal;
     margin-top:0px;
     margin-left:5px;
 }
 strong{
-    float:right;
-    margin-right:4%;
+    justify-content: right;
 }
 /******header*******/
 header {
@@ -89,10 +88,25 @@ section{
 }
 article{
     border-radius: 10px 10px 10px 10px;
-    padding:2px 2px;
-    margin:20px;
+    padding:1px 2px;
+    margin:18px;
     background-color: white;
 }
+.align-menu{
+    display: flex;
+    flex-direction:row-reverse;
+
+}
+.fa-check-circle{
+    justify-content: right;
+    color:white;
+    border-radius: 0px 10px 10px 0px;
+    font-size:1.5rem;
+    justify-content: right;
+    margin-top:-12%;
+    background-color: #99e2d0; 
+}
+
 /******bouton commander*****/
 .bouton {
     text-align: center;
