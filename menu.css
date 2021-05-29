@@ -46,9 +46,10 @@ h4{
     margin-top:0px;
     margin-left:5px;
 }
-strong{
-    justify-content: right;
-}
+
+
+
+
 /******header*******/
 header {
     text-align: center;
@@ -77,6 +78,10 @@ header {
 .fa-heart{
     margin-left:25px;
 }
+strong{
+    padding-right: 20px;
+    margin-top: -40px;
+}
 
 /*****menu********/
 section{
@@ -88,23 +93,27 @@ section{
 }
 article{
     border-radius: 10px 10px 10px 10px;
-    padding:1px 2px;
+    padding:1px 0px;
     margin:18px;
     background-color: white;
+    height: 70px;;
 }
 .align-menu{
+    display:flex;
+    justify-content: flex-end;
+}
+.align-price{
     display: flex;
-    flex-direction:row-reverse;
-
+    flex-direction: row;
+}
+.icon-hover{
+    margin-top: -78px;
 }
 .fa-check-circle{
-    justify-content: right;
-    color:white;
+    background-color: #99e2d0;
+    color: white;
+    padding: 30px 27px 27px 27px;
     border-radius: 0px 10px 10px 0px;
-    font-size:1.5rem;
-    justify-content: right;
-    margin-top:-12%;
-    background-color: #99e2d0; 
 }
 
 /******bouton commander*****/
