@@ -96,8 +96,18 @@ article{
     padding:1px 0px;
     margin:18px;
     background-color: white;
-    height: 70px;;
+    height: 70px;
 }
+.entree{
+    animation: animation 4s ease-in-out;
+}
+.plat{
+    animation: animation 8s ease-in-out;
+}
+.dessert{
+    animation: animation 12s ease-in-out;
+}
+
 .align-menu{
     display:flex;
     justify-content: flex-end;
