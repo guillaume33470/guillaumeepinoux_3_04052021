@@ -124,23 +124,28 @@ article{
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .icon{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 50px;
-    height: 63px;
+    width: 60px;
+    height: 72px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    right: -2px;
     position: absolute;
-    padding: 20px;
-    right: -50px;
     top: 0;
     opacity: 0;
     transition: transform 330ms ease-in-out;
 }
-.icon .fa-check-circle {
+
+.icon:hover{
+    opacity: 1;
+}
+.fa-check-circle {
+    font-size: 2.1em;
     color: #fff;
     transition: transform 500ms ease-in-out;
   }
