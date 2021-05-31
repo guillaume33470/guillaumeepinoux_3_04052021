@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
-    animation: loader 10s ease-in-out 5s forwards;
+    animation: loader 5s ease-in-out 3s forwards;
 }
 
 .cadreload {
@@ -194,8 +194,6 @@ h4 {
 }
 
 .para {
-    display:flex;
-    justify-content: center;
     position: relative;
     padding: 5px 0px;
     border-radius: 20px 20px;
@@ -222,9 +220,17 @@ h4 {
 
 .explication {
     font-family: "robotoB";
-    padding-top: 5px;
-    padding-left: 30px;
+    padding-left: 45px;
+    padding-top:8px;
+    padding-bottom:8px;
     color: black;
+    font-size: medium;
+}
+.choix{
+    display: inline-block;
+    margin-left: 15px;
+    color: black;
+    background-color: #F0F0F0;
 }
 
 .fa-mobile-alt {
