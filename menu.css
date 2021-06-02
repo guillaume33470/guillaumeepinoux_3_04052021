@@ -102,12 +102,7 @@ strong{
     padding-right: 20px;
     margin-top: -40px;
 }
-@media (min-width: 1440px) {
-    strong{
-        padding-left: 10px;
-        margin-top: -40px;
-    } 
-} 
+
 
 /*****menu********/
 section{
