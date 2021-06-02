@@ -21,6 +21,13 @@ h1{
     margin:0px 10px;
     font-weight:400;
 }
+@media (min-width: 1440px) {
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+    }
+}
 h2{
     font-family:"roboto";
     font-size:1.3rem;
@@ -65,13 +72,24 @@ header {
     width: 60%;
     padding-left: 13%;
 }
-
+@media (min-width: 1440px) {
+    #logo{
+        width: 40%;
+        height: 70px;
+        padding-left: 27%;
+    }  
+}
 .fa-arrow-left{
     margin-left: 50%;
     font-size:1.8rem;
     color:black;
 }
-
+@media (min-width: 1440px) {
+    .fa-arrow-left{
+        margin-left: 50%;
+        font-size: 2.5rem;
+    }
+}
 .img1{
     width:100%;
     height:250px;
@@ -84,6 +102,12 @@ strong{
     padding-right: 20px;
     margin-top: -40px;
 }
+@media (min-width: 1440px) {
+    strong{
+        padding-left: 10px;
+        margin-top: -40px;
+    } 
+} 
 
 /*****menu********/
 section{
@@ -93,6 +117,15 @@ section{
     padding-top:35px;
     margin-top: -40px;
 }
+@media (min-width: 1440px) {
+    .granderesolution{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 
+
 article{
     border-radius: 10px 10px 10px 10px;
     padding:1px 0px;
@@ -104,9 +137,18 @@ article{
     position: relative;
     transition: padding-right 450ms ease-in-out;
 }
+@media (min-width: 1440px) {
+    article{
+       flex-direction:column; 
+       justify-content: space-between;
+        width: 25%;
+    } 
+} 
+
 .entree{
     animation: animation 4s ease-in-out;
 }
+
 .plat{
     animation: animation 8s ease-in-out;
 }
@@ -163,6 +205,7 @@ article:hover {
     text-align: center;
     padding:40px 0px 50px;
 }
+
 a.button:link{ 
  text-decoration:none; 
 } 
@@ -172,8 +215,16 @@ a.button:link{
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
 }
+@media (min-width: 1440px) {
+    .bouton a{
+        border-radius: 45px 45px 45px 45px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    }
+} 
 
 .bouton a:hover {
-    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-    filter: brightness(110%);
+    background-color: #ae80e5;
+    background-blend-mode: lighten;
+    box-shadow: 6px 6px 8px grey;
   }

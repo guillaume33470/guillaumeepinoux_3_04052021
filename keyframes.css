@@ -9,6 +9,22 @@
       opacity: 0;
     }
   } 
+  @-webkit-keyframes mouvement { 
+    from { 
+        margin-left:-20%; 
+    } 
+    to { 
+        margin-left:100%; 
+    }  
+}
+@keyframes mouvement { 
+    from { 
+        margin-left:-30%; 
+    } 
+    to { 
+        margin-left:100%; 
+    }  
+}
   @keyframes animation { 
     0% {
       opacity: 0;

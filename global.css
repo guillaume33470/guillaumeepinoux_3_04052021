@@ -42,22 +42,6 @@ body {
     animation: 5s linear 0s infinite alternate mouvement;
   }
   
-@-webkit-keyframes mouvement { 
-    from { 
-        margin-left:-20%; 
-    } 
-    to { 
-        margin-left:100%; 
-    }  
-}
-@keyframes mouvement { 
-    from { 
-        margin-left:-30%; 
-    } 
-    to { 
-        margin-left:100%; 
-    }  
-}
 .loaderimg{
     width: 250px;
 }
@@ -79,8 +63,12 @@ body {
     width: 165px;
     height: 28px;
 }
-
-
+@media (min-width: 1440px) {
+    .logo{
+        width: 390px;
+        height: 50px;
+    }  
+}
 /******gestion du marker + Parisbelleville****/
 
 .paris {
@@ -134,8 +122,15 @@ h2 {
 }
 
 .h2restau {
+    font-family: "roboto";
+    font-size: 1.5rem;
     margin-left: 20px;
 }
+@media (min-width: 1440px) {
+    .h2restau {
+        margin-left: -120px;
+    }
+} 
 
 h3 {
     font-family: "roboto";
@@ -160,8 +155,15 @@ h4 {
     margin-top: 15%;
     margin-bottom:15%;
 }
+@media (min-width: 1440px) {
+    .bouton{
+        margin-top: 5%;
+        margin-bottom:5%;
+    } 
+} 
 
 .bouton a {
+    box-shadow:5px 5px 7px #aaa;
     border-radius: 25px 25px 25px 25px;
     padding: 15px 20px;
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
@@ -170,8 +172,9 @@ h4 {
 }
 
 .bouton :hover {
-    background: linear-gradient(to bottom right,#FF79DA,#9356DC);
-    filter: brightness(110%);
+    background-color: #ae80e5;
+    background-blend-mode: lighten;
+    box-shadow: 6px 6px 8px grey;
 }
 
 
@@ -182,6 +185,11 @@ h4 {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 50px;
+}
+@media (min-width: 1440px) {
+    .fonctionnement{
+        flex-direction:row;
+    }  
 }
 
 .article{
@@ -200,6 +208,11 @@ h4 {
     border-color: #F0F0F0;
     background-color: #F0F0F0;
     box-shadow: 0px 5px 0px #F6F6F6;
+}
+@media (min-width: 1440px) {
+    .para{
+        padding-right:10px;
+    }  
 }
 
 .para:hover {
@@ -228,6 +241,7 @@ h4 {
 }
 .choix{
     display: inline-block;
+    font-family: "robotoB";
     margin-left: 15px;
     color: black;
     background-color: #F0F0F0;
@@ -271,21 +285,35 @@ h4 {
     background-color: #F0F0F0;
     width: 100%;
 }
+@media (min-width: 1440px) {
+    .menu{
+        flex-direction: row;
+        justify-content:center;
+        flex-wrap: wrap;
+    }  
+}
 
 .art {
     border-radius: 10px 10px 10px 10px;
     position: relative;
     margin: 15px;
-    padding: 0px;
+    padding-left: 10px;
     background-color: white;
 }
-
+@media (min-width: 1440px) {
+    .art{
+        width: 35%;
+        padding-left:0px;
+        margin:60px 40px;
+    } 
+}
 .nouveau {
     position: absolute;
     text-align: right;
     top: 10%;
     right: 5%;
 }
+
 
 span {
     font-family: "roboto";
