@@ -52,6 +52,12 @@ h4{
     margin-top:0px;
     margin-left:5px;
 }
+@media (min-width: 1440px) {
+    h4{
+       
+        padding-left:5px;
+    }
+}
 
 
 
@@ -112,14 +118,7 @@ section{
     padding-top:35px;
     margin-top: -40px;
 }
-@media (min-width: 1440px) {
-    .granderesolution{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-} 
+
 
 article{
     border-radius: 10px 10px 10px 10px;
@@ -130,7 +129,12 @@ article{
     cursor: pointer;
     white-space: nowrap;
     position: relative;
+    text-overflow: ellipsis;
+  overflow: hidden;
     transition: padding-right 450ms ease-in-out;
+}
+article:hover {
+    padding-right: 75px;
 }
 @media (min-width: 1440px) {
     article{
@@ -140,16 +144,40 @@ article{
     } 
 } 
 
-.entree{
-    animation: animation 4s ease-in-out;
+.entrees{
+    animation: animation 3s ease-in-out;
 }
+@media (min-width: 1440px) {
+    .Entrees{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 
 
 .plat{
+    animation: animation 6s ease-in-out;
+}
+@media (min-width: 1440px) {
+    .plat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 
+.dessert{
     animation: animation 8s ease-in-out;
 }
-.dessert{
-    animation: animation 12s ease-in-out;
-}
+@media (min-width: 1440px) {
+    .dessert{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 
 
 .align-price{
     display: flex;
@@ -180,7 +208,7 @@ article{
     transition: transform 330ms ease-in-out;
 }
 
-.icon:hover{
+.icon:hover article {
     opacity: 1;
 }
 .fa-check-circle {
@@ -190,10 +218,8 @@ article{
   }
   .fa-check-circle:hover  {
     transform: rotate(360deg);
+    opacity: 1;
   }
-article:hover {
-    padding-right: 75px;
-}
 
 /******bouton commander*****/
 .bouton {
@@ -223,3 +249,4 @@ a.button:link{
     background-blend-mode: lighten;
     box-shadow: 6px 6px 8px grey;
   }
+  /********media query********/
