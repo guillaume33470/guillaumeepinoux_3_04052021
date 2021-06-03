@@ -63,12 +63,7 @@ body {
     width: 165px;
     height: 28px;
 }
-@media (min-width: 1440px) {
-    .logo{
-        width: 390px;
-        height: 50px;
-    }  
-}
+
 /******gestion du marker + Parisbelleville****/
 
 .paris {
@@ -126,11 +121,7 @@ h2 {
     font-size: 1.5rem;
     margin-left: 20px;
 }
-@media (min-width: 1440px) {
-    .h2restau {
-        margin-left: -120px;
-    }
-} 
+
 
 h3 {
     font-family: "roboto";
@@ -155,13 +146,7 @@ h4 {
     margin-top: 15%;
     margin-bottom:15%;
 }
-@media (min-width: 1440px) {
-    .bouton{
-        margin-top: 5%;
-        margin-bottom:5%;
-    } 
-} 
-
+ 
 .bouton a {
     box-shadow:5px 5px 7px #aaa;
     border-radius: 25px 25px 25px 25px;
@@ -186,11 +171,6 @@ h4 {
     justify-content: center;
     margin-bottom: 50px;
 }
-@media (min-width: 1440px) {
-    .fonctionnement{
-        flex-direction:row;
-    }  
-}
 
 .article{
     padding: 20px;
@@ -208,11 +188,6 @@ h4 {
     border-color: #F0F0F0;
     background-color: #F0F0F0;
     box-shadow: 0px 5px 0px #F6F6F6;
-}
-@media (min-width: 1440px) {
-    .para{
-        padding-right:10px;
-    }  
 }
 
 .para:hover {
@@ -285,13 +260,6 @@ h4 {
     background-color: #F0F0F0;
     width: 100%;
 }
-@media (min-width: 1440px) {
-    .menu{
-        flex-direction: row;
-        justify-content:center;
-        flex-wrap: wrap;
-    }  
-}
 
 .art {
     border-radius: 10px 10px 10px 10px;
@@ -300,13 +268,7 @@ h4 {
     padding-left: 10px;
     background-color: white;
 }
-@media (min-width: 1440px) {
-    .art{
-        width: 35%;
-        padding-left:0px;
-        margin:60px 40px;
-    } 
-}
+
 .nouveau {
     position: absolute;
     text-align: right;
@@ -371,4 +333,46 @@ a:link {
     -webkit-text-stroke-color:white;
     color: #9356DC;
     cursor: pointer;
+}
+/*********media query*********/
+@media (min-width: 1440px) {
+    .logo{
+        width: 390px;
+        height: 50px;
+    }  
+}
+@media (min-width: 1440px) {
+    .h2restau {
+        margin-left: -120px;
+    }
+}
+@media (min-width: 1440px) {
+    .bouton{
+        margin-top: 5%;
+        margin-bottom:5%;
+    } 
+}
+@media (min-width: 1440px) {
+    .fonctionnement{
+        flex-direction:row;
+    }  
+}
+@media (min-width: 1440px) {
+    .para{
+        padding-right:10px;
+    }  
+}
+@media (min-width: 1440px) {
+    .menu{
+        flex-direction: row;
+        justify-content:center;
+        flex-wrap: wrap;
+    }  
+}
+@media (min-width: 1440px) {
+    .art{
+        width: 35%;
+        padding-left:0px;
+        margin:60px 40px;
+    } 
 }

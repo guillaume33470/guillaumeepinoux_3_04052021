@@ -21,13 +21,7 @@ h1{
     margin:0px 10px;
     font-weight:400;
 }
-@media (min-width: 1440px) {
-    h1{
-        text-align: center;
-        padding-bottom: 20px;
-        font-size: 2.5rem;
-    }
-}
+
 h2{
     font-family:"roboto";
     font-size:1.3rem;
@@ -52,15 +46,6 @@ h4{
     margin-top:0px;
     margin-left:5px;
 }
-@media (min-width: 1440px) {
-    h4{
-       
-        padding-left:5px;
-    }
-}
-
-
-
 
 /******header*******/
 header {
@@ -78,24 +63,13 @@ header {
     width: 60%;
     padding-left: 13%;
 }
-@media (min-width: 1440px) {
-    #logo{
-        width: 40%;
-        height: 70px;
-        padding-left: 27%;
-    }  
-}
+
 .fa-arrow-left{
     margin-left: 50%;
     font-size:1.8rem;
     color:black;
 }
-@media (min-width: 1440px) {
-    .fa-arrow-left{
-        margin-left: 50%;
-        font-size: 2.5rem;
-    }
-}
+
 .img1{
     width:100%;
     height:250px;
@@ -133,51 +107,18 @@ article{
   overflow: hidden;
     transition: padding-right 450ms ease-in-out;
 }
-article:hover {
-    padding-right: 75px;
-}
-@media (min-width: 1440px) {
-    article{
-       flex-direction:column; 
-       justify-content: space-between;
-        width: 25%;
-    } 
-} 
 
 .entrees{
     animation: animation 3s ease-in-out;
 }
-@media (min-width: 1440px) {
-    .Entrees{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-} 
-
+ 
 .plat{
     animation: animation 6s ease-in-out;
 }
-@media (min-width: 1440px) {
-    .plat{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-} 
+ 
 .dessert{
     animation: animation 8s ease-in-out;
 }
-@media (min-width: 1440px) {
-    .dessert{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    } 
-} 
 
 .align-price{
     display: flex;
@@ -208,11 +149,11 @@ article:hover {
     transition: transform 330ms ease-in-out;
 }
 
-.icon:hover article {
+.icon:hover {
     opacity: 1;
 }
 .fa-check-circle {
-    font-size: 2.1em;
+    font-size: 1.5em;
     color: #fff;
     transition: transform 500ms ease-in-out;
   }
@@ -236,13 +177,6 @@ a.button:link{
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
 }
-@media (min-width: 1440px) {
-    .bouton a{
-        border-radius: 45px 45px 45px 45px;
-        padding: 20px 40px;
-        font-size: 1.5rem;
-    }
-} 
 
 .bouton a:hover {
     background-color: #ae80e5;
@@ -250,3 +184,68 @@ a.button:link{
     box-shadow: 6px 6px 8px grey;
   }
   /********media query********/
+  @media (min-width: 1440px) {
+    h1{
+        text-align: center;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1440px) {
+    h4{
+       
+        padding-left:5px;
+    }
+}
+@media (min-width: 1440px) {
+    #logo{
+        width: 40%;
+        height: 70px;
+        padding-left: 27%;
+    }  
+}
+@media (min-width: 1440px) {
+    .fa-arrow-left{
+        margin-left: 50%;
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1440px) {
+    article{
+       flex-direction:column; 
+       justify-content: space-between;
+        width: 25%;
+    } 
+}
+@media (min-width: 1440px) {
+    .Entrees{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+}
+@media (min-width: 1440px) {
+    .plat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+}
+@media (min-width: 1440px) {
+    .dessert{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 
+
+@media (min-width: 1440px) {
+    .bouton a{
+        border-radius: 45px 45px 45px 45px;
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    }
+} 
