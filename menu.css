@@ -75,8 +75,37 @@ header {
     height:250px;
     object-fit:cover;
 }
-.fa-heart{
+
+.fa-heart {
+    font-size: 2.3rem;
+    color: white;
     margin-left:25px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 3s ease-out;
+}
+
+.fa-heart:hover::before {
+    -webkit-text-stroke-width:initial;
+    -webkit-text-stroke-color:white;
+    color: #9356DC;
+    cursor: pointer;
+}
+
+.animheart:hover{
+    animation: animheart 3s ease-in-out;
+    display: inline-block;
+    opacity: 1;
+    background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
 }
 strong{
     padding-right: 20px;
