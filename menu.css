@@ -183,14 +183,15 @@ article:hover .icon {
 }
 
 
-.fa-check-circle {
+article:hover .fa-check-circle {
     font-size: 1.5em;
     color: #fff;
     transition: transform 500ms ease-in-out;
+    -webkit-animation: rotate-center 0.8s ease-in-out both;
+	animation: rotate-center 0.8s ease-in-out both;
   }
-  article:hover .fa-check-circle  {
-    transform: rotate(360deg);
-  }
+
+  
 
 /******bouton commander*****/
 .bouton {
