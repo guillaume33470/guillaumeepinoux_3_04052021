@@ -134,7 +134,13 @@ article{
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: padding-right 450ms ease-in-out;
+}
+article:hover h4{
+    width:50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
 }
 
 .entrees{
@@ -148,7 +154,6 @@ article{
 .dessert{
     animation: animation 8s ease-in-out;
 }
-
 .align-price{
     display: flex;
     justify-content: space-between;
@@ -160,6 +165,11 @@ article{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+article:hover .price{
+    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .icon{
@@ -175,12 +185,13 @@ article{
     position: absolute;
     top: 0;
     opacity: 0;
-    transition: transform 330ms ease-in-out;
+}
+article:hover .icon {
+    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.icon:hover {
-    opacity: 1;
-}
+
 .fa-check-circle {
     font-size: 1.5em;
     color: #fff;
@@ -188,7 +199,6 @@ article{
   }
   .fa-check-circle:hover  {
     transform: rotate(360deg);
-    opacity: 1;
   }
 
 /******bouton commander*****/
