@@ -104,7 +104,7 @@ article{
     white-space: nowrap;
     position: relative;
     text-overflow: ellipsis;
-  overflow: hidden;
+    overflow: hidden;
     transition: padding-right 450ms ease-in-out;
 }
 

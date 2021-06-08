@@ -306,10 +306,11 @@ a:link {
 .fa-heart {
     font-size: 1.3rem;
     color: white;
-    margin-top: -2%;
+    margin-top: -60px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
+
 .animheart:hover{
     animation: animheart 3s ease-in-out;
     display: inline-block;
