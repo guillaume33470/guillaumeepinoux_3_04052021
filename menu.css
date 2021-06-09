@@ -166,8 +166,8 @@ article:hover h4{
 
 
 article:hover .price{
-    -webkit-animation: slide-price 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-price 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-price 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-price 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .icon{
@@ -185,8 +185,8 @@ article:hover .price{
     opacity: 0;
 }
 article:hover .icon {
-    -webkit-animation: slide-validation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-validation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-validation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-validation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -194,8 +194,8 @@ article:hover .fa-check-circle {
     font-size: 1.5em;
     color: #fff;
     transition: transform 500ms ease-in-out;
-    -webkit-animation: rotate-icon 0.8s ease-in-out both;
-	animation: rotate-icon 0.8s ease-in-out both;
+    -webkit-animation: rotateicon 2s ease-in-out both;
+	animation: rotateicon 2s ease-in-out both;
   }
 
   
