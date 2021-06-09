@@ -135,17 +135,24 @@ article{
     overflow: hidden;
 }
 
-.entrees{
-    animation: animation 3s ease-in-out;
+.Entrees {
+    animation-name: debut;
+    transform: scale(1);
+    animation-duration: 2s;
 }
- 
-.plat{
-    animation: animation 6s ease-in-out;
+
+.plat {
+    animation-name: monplat;
+    transform: scale(1);
+    animation-duration: 4s;
 }
- 
-.dessert{
-    animation: animation 8s ease-in-out;
+
+.dessert {
+    animation-name: desserts;
+    transform: scale(1);
+    animation-duration: 6s;
 }
+
 .align-price{
     display: flex;
     justify-content: space-between;
@@ -159,8 +166,8 @@ article:hover h4{
 
 
 article:hover .price{
-    -webkit-animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-price 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-price 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .icon{
@@ -178,8 +185,8 @@ article:hover .price{
     opacity: 0;
 }
 article:hover .icon {
-    -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-validation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-validation 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -187,8 +194,8 @@ article:hover .fa-check-circle {
     font-size: 1.5em;
     color: #fff;
     transition: transform 500ms ease-in-out;
-    -webkit-animation: rotate-center 0.8s ease-in-out both;
-	animation: rotate-center 0.8s ease-in-out both;
+    -webkit-animation: rotate-icon 0.8s ease-in-out both;
+	animation: rotate-icon 0.8s ease-in-out both;
   }
 
   

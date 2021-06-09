@@ -47,7 +47,75 @@
     opacity: 1;
   }
 }
-@keyframes slide-left {
+@keyframes debut {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+    }
+    60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+}
+
+@keyframes monplat {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+    }
+    60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+}
+
+@keyframes desserts {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+    }
+    60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+    }
+    80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+    }
+    100% {
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+    }
+}
+@keyframes slide-price {
   0% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -57,7 +125,7 @@
             transform: translateX(-100px);
   }
 }
-@keyframes slide-in-right {
+@keyframes slide-validation {
   0% {
     -webkit-transform: translateX(1000px);
             transform: translateX(1000px);
@@ -69,7 +137,7 @@
     opacity: 1;
   }
 }
-@keyframes rotate-center {
+@keyframes rotate-icon {
   0% {
     -webkit-transform: rotate(0);
             transform: rotate(0);
@@ -79,3 +147,4 @@
             transform: rotate(360deg);
   }
 }
+
