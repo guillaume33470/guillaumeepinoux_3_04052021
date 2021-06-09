@@ -30,7 +30,7 @@ body {
     top: 0;
     left: 0;
     pointer-events: none;
-    animation: loader 5s ease-in-out 3s forwards;
+    animation: loader 5s ease-in-out 1.3s forwards;
 }
 
 .cadreload {
@@ -89,7 +89,6 @@ body {
 h1 {
     font-family: "robotoB";
     font-size: 1.8rem;
-    font-weight: 800;
 }
 
 h2 {
@@ -153,7 +152,7 @@ h4 {
     padding: 15px 20px;
     background: linear-gradient(to bottom right,#FF79DA,#9356DC);
     color: white;
-    font-family: "roboto";
+    font-family: "robotoB";
 }
 
 .bouton :hover {
