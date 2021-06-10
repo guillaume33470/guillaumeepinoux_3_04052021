@@ -1,41 +1,35 @@
-@keyframes loader { 
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 0;
-    }
-  } 
-  @-webkit-keyframes mouvement { 
-    from { 
-        margin-left:-20%; 
-    } 
-    to { 
-        margin-left:100%; 
-    }  
+/*******animation du loader (opacité)********/
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@keyframes mouvement { 
-    from { 
-        margin-left:-30%; 
-    } 
-    to { 
-        margin-left:100%; 
-    }  
+/*******loader spinning( mouvement du ohmyfood)****/
+@-webkit-keyframes mouvement {
+  from {
+    margin-left: -20%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
-  @keyframes animation { 
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      opacity: 1;
-    }
+
+@keyframes mouvement {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 100%;
+  }
 }
+
+/*********animation du coeur (degradé)*******/
 @keyframes animheart {
   0% {
     opacity: 0;
@@ -47,27 +41,28 @@
     opacity: 1;
   }
 }
+  /*****animation des cartes********/
 @keyframes debut {
   0% {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
-    }
-    60% {
+  }
+  60% {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     opacity: 1;
-    }
-    80% {
+  }
+  80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
     opacity: 1;
-    }
-    100% {
+  }
+  100% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
-    }
+  }
 }
 
 @keyframes monplat {
@@ -75,22 +70,22 @@
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
-    }
-    60% {
+  }
+  60% {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     opacity: 1;
-    }
-    80% {
+  }
+  80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
     opacity: 1;
-    }
-    100% {
+  }
+  100% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
-    }
+  }
 }
 
 @keyframes desserts {
@@ -98,53 +93,54 @@
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
-    }
-    60% {
+  }
+  60% {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     opacity: 1;
-    }
-    80% {
+  }
+  80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
     opacity: 1;
-    }
-    100% {
+  }
+  100% {
     -webkit-transform: none;
     transform: none;
     opacity: 1;
-    }
+  }
 }
+
+/* animation interieur menu (prix, icone validation,...)*/
 @keyframes slide-price {
   0% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
     -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    transform: translateX(-100px);
   }
 }
 @keyframes slide-validation {
   0% {
     -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    transform: translateX(1000px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes rotateicon {
   0% {
     -webkit-transform: rotate(0);
-            transform: rotate(0);
+    transform: rotate(0);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-

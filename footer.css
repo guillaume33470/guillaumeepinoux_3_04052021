@@ -53,3 +53,8 @@ p {
         padding-bottom: 4%;
     }
 }
+@media (min-width: 1440px) {
+    p {
+        font-size:1.5rem;
+    }
+}

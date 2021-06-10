@@ -108,8 +108,8 @@ header {
     font-weight: bold;
 }
 strong{
-    margin-top: -40px;
-    margin-right:5px;
+    margin-right:10px;
+    margin-left: -45px;
 }
 
 
@@ -141,16 +141,51 @@ article{
     animation-duration: 2s;
 }
 
+@media (max-width: 1024px) {
+
+    .Entrees {
+    -webkit-animation-name: debut;
+            animation-name: debut;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+}
+
 .plat {
     animation-name: monplat;
     transform: scale(1);
     animation-duration: 4s;
 }
 
+@media (max-width: 1024px) {
+
+    .plat {
+    -webkit-animation-name: monplat;
+            animation-name: monplat;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    }
+}
+
 .dessert {
     animation-name: desserts;
     transform: scale(1);
     animation-duration: 6s;
+}
+@media (max-width: 1024px) {
+
+    .dessert {
+    -webkit-animation-name: desserts;
+            animation-name: desserts;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
 }
 
 .align-price{
@@ -166,8 +201,9 @@ article:hover h4{
 
 
 article:hover .price{
-    -webkit-animation: slide-price 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-price 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: slide-price 1.8s cubic-bezier(0.250, 0.460, 0.460, 0.940) both;
+	animation: slide-price 1.8s cubic-bezier(0.250, 0.460, 0.460, 0.940) both;
+    animation-delay: 0.467s;
 }
 
 .icon{
@@ -183,10 +219,12 @@ article:hover .price{
     position: absolute;
     top: 0;
     opacity: 0;
+
 }
-article:hover .icon {
-    -webkit-animation: slide-validation 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: slide-validation 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+ article:hover .icon {  
+    -webkit-animation: slide-validation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-validation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
