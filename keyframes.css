@@ -42,74 +42,57 @@
   }
 }
   /*****animation des cartes********/
-@keyframes debut {
+
+@keyframes monentree {
   0% {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity :0;
   }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
+
+  50%{
+    opacity:0.5;
   }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
+
   100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity:1;
   }
 }
 
 @keyframes monplat {
   0% {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity:0;
   }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
+  50%{
+    opacity:0.5;
   }
   100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity:1;
   }
 }
 
 @keyframes desserts {
   0% {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity:0;
   }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
+  50%{
+    opacity:0.5;
   }
   100% {
-    -webkit-transform: none;
-    transform: none;
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity:1;
   }
 }
+
 
 /* animation interieur menu (prix, icone validation,...)*/
 @keyframes slide-price {
