@@ -255,6 +255,7 @@ a.button:link{
        flex-direction:column; 
        justify-content: space-between;
         width: 25%;
+        margin:10px;
     } 
 }
 @media (min-width: 1440px) {
