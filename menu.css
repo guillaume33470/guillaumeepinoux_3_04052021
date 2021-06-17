@@ -45,6 +45,7 @@ h4{
     font-weight:normal;
     margin-top:0px;
     margin-left:5px;
+    width:80%;
 }
 
 /******header*******/
@@ -109,7 +110,6 @@ header {
 }
 strong{
     margin-right:10px;
-    margin-left: -45px;
 }
 
 
@@ -126,7 +126,7 @@ section{
 article{
     border-radius: 10px 10px 10px 10px;
     padding:1px 0px;
-    margin:18px;
+    margin-top:15px;
     background-color: white;
     height: 75px;
     cursor: pointer;
@@ -134,23 +134,11 @@ article{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
+/*******animation des cartes********/
 .Entrees {
     animation-name: debut;
     transform: scale(1);
     animation-duration: 2s;
-}
-
-@media (max-width: 1024px) {
-
-    .Entrees {
-    -webkit-animation-name: debut;
-            animation-name: debut;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-  }
 }
 
 .plat {
@@ -159,35 +147,12 @@ article{
     animation-duration: 4s;
 }
 
-@media (max-width: 1024px) {
-
-    .plat {
-    -webkit-animation-name: monplat;
-            animation-name: monplat;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-    }
-}
-
 .dessert {
     animation-name: desserts;
     transform: scale(1);
     animation-duration: 6s;
 }
-@media (max-width: 1024px) {
-
-    .dessert {
-    -webkit-animation-name: desserts;
-            animation-name: desserts;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
-  }
-}
-
+/*******animation interieur des cartes******/
 .align-price{
     display: flex;
     justify-content: space-between;
@@ -198,7 +163,6 @@ article:hover h4{
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 
 article:hover .price{
     -webkit-animation: slide-price 1.8s cubic-bezier(0.250, 0.460, 0.460, 0.940) both;
@@ -211,7 +175,7 @@ article:hover .price{
     justify-content: center;
     align-items: center;
     background-color: #99E2D0;
-    width: 60px;
+    width: 50px;
     height: 75px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -236,7 +200,6 @@ article:hover .fa-check-circle {
 	animation: rotateicon 2s ease-in-out both;
   }
 
-  
 
 /******bouton commander*****/
 .bouton {
